@@ -1,0 +1,22 @@
+{
+  "name": "shared",
+  "version": "0.0.1",
+  "dependencies": {
+    "@types/node": "^16.18.34",
+    "dynamoose": "^3.2.0",
+    "lodash": "^4.17.21",
+    "typescript": "^4.9.5",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.195",
+    "@types/uuid": "^9.0.1"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sameer Dewan",
+  "license": "ISC"
+}

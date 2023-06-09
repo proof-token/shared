@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "esnext"],
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "rootDirs": ["./ts"],
+    "outDir": "./src",
+    "baseUrl": "./",
+    "paths": {
+      "@shared/*": [
+        "./ts/types/*",
+        "./ts/services/*",
+        "./ts/http/*",
+        "./ts/factories/*",
+        "./ts/util/*",
+        "./ts/repository/*"
+      ]
+    }
+  },
+  "include": [
+    "./ts/**/*"
+  ]
+}
