@@ -1,4 +1,4 @@
-import Token from '@shared/Token'
+import Token from '../types/Token'
 import RootRepository from './RootRepository'
 import TokenModel from './models/TokenModel'
 

@@ -1,8 +1,8 @@
-import Group from '@shared/Group'
-import HttpError from '@shared/HttpError'
-import { HttpStatus } from '@shared/HttpStatus'
 import defaultTo from 'lodash/defaultTo'
 import isNil from 'lodash/isNil'
+import HttpError from '../http/HttpError'
+import { HttpStatus } from '../http/HttpStatus'
+import Group from '../types/Group'
 
 class GroupFactory {
   id: Group['id'] = undefined

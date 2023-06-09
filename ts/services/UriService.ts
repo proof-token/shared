@@ -1,13 +1,13 @@
-import Contract from '@shared/Contract'
-import ContractRepository from '@shared/ContractRepository'
-import HttpError from '@shared/HttpError'
-import { HttpStatus } from '@shared/HttpStatus'
-import Status from '@shared/Status'
-import Uri from '@shared/Uri'
-import UriFactory from '@shared/UriFactory'
-import UriRepository from '@shared/UriRepository'
-import toType from '@shared/toType'
 import isNil from 'lodash/isNil'
+import UriFactory from '../factories/UriFactory'
+import HttpError from '../http/HttpError'
+import { HttpStatus } from '../http/HttpStatus'
+import ContractRepository from '../repository/ContractRepository'
+import UriRepository from '../repository/UriRepository'
+import Contract from '../types/Contract'
+import Status from '../types/Status'
+import Uri from '../types/Uri'
+import toType from '../util/toType'
 
 class UriService {
   static uriRepository: typeof UriRepository.prototype = new UriRepository()

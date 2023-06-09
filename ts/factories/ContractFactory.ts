@@ -1,8 +1,8 @@
-import Contract from '@shared/Contract'
-import HttpError from '@shared/HttpError'
-import { HttpStatus } from '@shared/HttpStatus'
 import defaultTo from 'lodash/defaultTo'
 import isNil from 'lodash/isNil'
+import HttpError from '../http/HttpError'
+import { HttpStatus } from '../http/HttpStatus'
+import Contract from '../types/Contract'
 
 class ContractFactory {
   id: Contract['id'] = undefined

@@ -1,9 +1,9 @@
-import HttpError from '@shared/HttpError'
-import { HttpStatus } from '@shared/HttpStatus'
-import Status from '@shared/Status'
-import Token from '@shared/Token'
 import defaultTo from 'lodash/defaultTo'
 import isNil from 'lodash/isNil'
+import HttpError from '../http/HttpError'
+import { HttpStatus } from '../http/HttpStatus'
+import Status from '../types/Status'
+import Token from '../types/Token'
 
 class TokenFactory {
   id: Token['id'] = undefined

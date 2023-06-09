@@ -1,6 +1,6 @@
-import Contract from '@shared/Contract'
-import Group from '@shared/Group'
-import toType from '@shared/toType'
+import Contract from '../types/Contract'
+import Group from '../types/Group'
+import toType from '../util/toType'
 import RootRepository from './RootRepository'
 import GroupModel from './models/GroupModel'
 

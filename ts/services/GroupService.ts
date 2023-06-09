@@ -1,12 +1,12 @@
-import Contract from '@shared/Contract'
-import ContractRepository from '@shared/ContractRepository'
-import Group from '@shared/Group'
-import GroupFactory from '@shared/GroupFactory'
-import GroupRepository from '@shared/GroupRepository'
-import HttpError from '@shared/HttpError'
-import { HttpStatus } from '@shared/HttpStatus'
-import toType from '@shared/toType'
 import isNil from 'lodash/isNil'
+import GroupFactory from '../factories/GroupFactory'
+import HttpError from '../http/HttpError'
+import { HttpStatus } from '../http/HttpStatus'
+import ContractRepository from '../repository/ContractRepository'
+import GroupRepository from '../repository/GroupRepository'
+import Contract from '../types/Contract'
+import Group from '../types/Group'
+import toType from '../util/toType'
 
 class GroupService {
   static groupRepository: typeof GroupRepository.prototype =

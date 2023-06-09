@@ -1,7 +1,7 @@
-import Chain from '@shared/Chain'
-import Status from '@shared/Status'
 import dynamoose from 'dynamoose'
 import { v4 as uuidv4 } from 'uuid'
+import Chain from '../../types/Chain'
+import Status from '../../types/Status'
 
 const blockchainSubSchema = {
   type: Object,

@@ -1,9 +1,9 @@
-import HttpError from '@shared/HttpError'
-import { HttpStatus } from '@shared/HttpStatus'
-import Status from '@shared/Status'
-import Uri from '@shared/Uri'
 import defaultTo from 'lodash/defaultTo'
 import isNil from 'lodash/isNil'
+import HttpError from '../http/HttpError'
+import { HttpStatus } from '../http/HttpStatus'
+import Status from '../types/Status'
+import Uri from '../types/Uri'
 
 class UriFactory {
   id: Uri['id'] = undefined

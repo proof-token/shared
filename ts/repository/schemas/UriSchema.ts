@@ -1,6 +1,6 @@
-import Status from '@shared/Status'
 import dynamoose from 'dynamoose'
 import { v4 as uuidv4 } from 'uuid'
+import Status from '../../types/Status'
 
 const UriSchema = new dynamoose.Schema(
   {

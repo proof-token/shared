@@ -1,7 +1,7 @@
-import Chain from '@shared/Chain'
-import Contract from '@shared/Contract'
-import Status from '@shared/Status'
-import toType from '@shared/toType'
+import Chain from '../types/Chain'
+import Contract from '../types/Contract'
+import Status from '../types/Status'
+import toType from '../util/toType'
 import RootRepository from './RootRepository'
 import ContractModel from './models/ContractModel'
 

@@ -1,6 +1,6 @@
-import Status from '@shared/Status'
-import Uri from '@shared/Uri'
-import toType from '@shared/toType'
+import Status from '../types/Status'
+import Uri from '../types/Uri'
+import toType from '../util/toType'
 import RootRepository from './RootRepository'
 import UriModel from './models/UriModel'
 

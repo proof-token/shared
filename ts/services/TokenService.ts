@@ -1,12 +1,12 @@
-import Contract from '@shared/Contract'
-import ContractRepository from '@shared/ContractRepository'
-import HttpError from '@shared/HttpError'
-import { HttpStatus } from '@shared/HttpStatus'
-import Token from '@shared/Token'
-import TokenFactory from '@shared/TokenFactory'
-import TokenRepository from '@shared/TokenRepository'
-import toType from '@shared/toType'
 import isNil from 'lodash/isNil'
+import TokenFactory from '../factories/TokenFactory'
+import HttpError from '../http/HttpError'
+import { HttpStatus } from '../http/HttpStatus'
+import ContractRepository from '../repository/ContractRepository'
+import TokenRepository from '../repository/TokenRepository'
+import Contract from '../types/Contract'
+import Token from '../types/Token'
+import toType from '../util/toType'
 
 class TokenService {
   tokenRepository: typeof TokenRepository.prototype = new TokenRepository()
