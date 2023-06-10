@@ -11,7 +11,5 @@
     "outDir": "./src",
     "baseUrl": "./",
   },
-  "include": [
-    "./ts/**/*"
-  ]
+  "include": ["."]
 }
