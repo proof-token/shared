@@ -1,6 +1,7 @@
 {
   "name": "shared",
   "version": "0.0.1",
+  "types": "lib.*.d.ts",
   "dependencies": {
     "@types/node": "^16.18.34",
     "@types/lodash": "^4.14.195",
