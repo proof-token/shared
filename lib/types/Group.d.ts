@@ -1,5 +1,5 @@
 import Contract from './Contract';
-type Group = {
+declare type Group = {
     id?: string;
     name: string;
     userId: string;

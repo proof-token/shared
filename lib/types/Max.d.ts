@@ -1,2 +1,2 @@
-type Max = number | 'infinite';
+declare type Max = number;
 export default Max;

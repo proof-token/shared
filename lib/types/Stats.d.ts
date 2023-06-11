@@ -1,4 +1,4 @@
-type Stats = {
+declare type Stats = {
     mints: number;
     topContract: {
         name: string;
@@ -6,16 +6,16 @@ type Stats = {
         mints: number;
     };
 };
-type Year = number;
-type Day = number;
-type Month = number;
-export type DayStats = {
+declare type Year = number;
+declare type Day = number;
+declare type Month = number;
+export declare type DayStats = {
     day: Day;
     month: Month;
     year: Year;
     stats: Stats;
 };
-export type MonthStats = {
+export declare type MonthStats = {
     month: Month;
     year: Year;
     stats: Stats;

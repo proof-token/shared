@@ -1,6 +1,6 @@
 import Contract from './Contract';
 import Status from './Status';
-type Uri = {
+declare type Uri = {
     id?: string;
     uri?: string;
     s3: boolean;

@@ -72,7 +72,7 @@ class TokenService {
       throw new HttpError('Contract does not exist', HttpStatus.NOT_FOUND)
     }
     // Check if max has been exceeded
-    if (contract.max !== 'infinite') {
+    if (contract.max !== -1) {
       if (contract.tokenIds && contract.tokenIds.size > contract.max) {
         throw new HttpError(
           'Contract max tokens issued: ' + contract.max,

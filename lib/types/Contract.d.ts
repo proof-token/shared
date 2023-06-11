@@ -4,7 +4,7 @@ import Group from './Group';
 import Max from './Max';
 import Token from './Token';
 import Uri from './Uri';
-type Contract = {
+declare type Contract = {
     id?: string;
     name: string;
     symbol: string;

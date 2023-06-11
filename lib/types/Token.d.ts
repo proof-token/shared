@@ -1,7 +1,7 @@
 import Chain from './Chain';
 import Contract from './Contract';
 import Status from './Status';
-type Token = {
+declare type Token = {
     id?: string;
     userId: string;
     chain: Chain;

@@ -1,5 +1,5 @@
 import Status from './Status';
-type ChainOptions = {
+declare type ChainOptions = {
     enabled: boolean;
     address: string;
     status: Status;
