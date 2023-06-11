@@ -1,3 +1,3 @@
-type Max = number | 'infinite'
+type Max = number
 
 export default Max

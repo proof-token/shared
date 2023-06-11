@@ -12,7 +12,7 @@ class ContractFactory {
   uriId: Contract['uriId'] = undefined as any
   groupId: Contract['groupId'] = undefined as any
   tokenIds: Contract['tokenIds'] = new Set()
-  max: Contract['max'] = 'infinite'
+  max: Contract['max'] = -1
   chains: Contract['chains'] = {}
   archived: Contract['archived'] = false
   createdAt: Contract['createdAt'] = undefined
@@ -44,6 +44,12 @@ class ContractFactory {
     }
     if (isNil(this.uriId)) {
       throw new HttpError('Missing contract uri', HttpStatus.BAD_REQUEST)
+    }
+    if (this.max === 0 || this.max < -1) {
+      throw new HttpError(
+        'Max must be -1 for infinite mints, or a positive integer',
+        HttpStatus.BAD_REQUEST
+      )
     }
   }
 

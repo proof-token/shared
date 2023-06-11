@@ -42,7 +42,10 @@ const ContractSchema = new dynamoose.Schema(
       type: Set,
       schema: [String]
     },
-    max: [Number, 'infinite'],
+    max: {
+      type: Number,
+      default: -1
+    },
     chains: {
       type: Object,
       schema: {
