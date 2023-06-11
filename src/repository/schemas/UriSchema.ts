@@ -26,7 +26,8 @@ const UriSchema = new dynamoose.Schema(
       schema: [String]
     },
     status: {
-      type: [Status.PENDING, Status.PROCESSING, Status.FAILED, Status.SUCCESS],
+      type: String,
+      enum: [Status.PENDING, Status.PROCESSING, Status.FAILED, Status.SUCCESS],
       default: Status.PENDING
     }
   },

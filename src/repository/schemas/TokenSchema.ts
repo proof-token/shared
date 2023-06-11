@@ -11,16 +11,20 @@ const TokenSchema = new dynamoose.Schema(
       hashKey: true
     },
     userId: String,
-    chain: [
-      Chain.ETHEREUM_MAINNET,
-      Chain.ETHEREUM_GOERLI,
-      Chain.ETHEREUM_RINKBY,
-      Chain.ETHEREUM_SEPOLIA
-    ],
+    chain: {
+      type: String,
+      enum: [
+        Chain.ETHEREUM_MAINNET,
+        Chain.ETHEREUM_GOERLI,
+        Chain.ETHEREUM_RINKBY,
+        Chain.ETHEREUM_SEPOLIA
+      ]
+    },
     address: String,
     amount: Number,
     status: {
-      type: [Status.PENDING, Status.PROCESSING, Status.FAILED, Status.SUCCESS],
+      type: String,
+      enum: [Status.PENDING, Status.PROCESSING, Status.FAILED, Status.SUCCESS],
       default: Status.PENDING
     },
     tx: String,
